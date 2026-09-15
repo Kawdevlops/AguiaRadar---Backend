@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: aguiaradar-backend
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/aguiaradar}
+
+# Configuracoes customizadas do AguiaRadar
+aguiaradar:
+  jwt:
+    secret: ${JWT_SECRET:c3VwZXItc2VjcmV0LWtleS1hZ3VpYS1yYWRhci1kZXNhZmlvLWZpYXAtMjAyNi1jaGF2ZS1zZWd1cmE=}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000} # 24h
+  ia:
+    # Provedor gratuito de IA usado para pontuar/priorizar ideias.
+    # Compativel com a API da OpenRouter (https://openrouter.ai) - varios modelos gratuitos disponiveis.
+    provider-url: ${IA_PROVIDER_URL:https://openrouter.ai/api/v1/chat/completions}
+    api-key: ${IA_API_KEY:}
+    model: ${IA_MODEL:meta-llama/llama-3.1-8b-instruct:free}
+    enabled: ${IA_ENABLED:true}
+  seed:
+    enabled: ${SEED_ENABLED:true}
+
+logging:
+  level:
+    br.com.fiap.aguiaradar: INFO
+    org.springframework.security: WARN
