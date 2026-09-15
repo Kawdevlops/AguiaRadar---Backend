@@ -1,5 +1,3 @@
-Claro. Vou deixar com uma linguagem mais natural, como se fosse você descrevendo o projeto no GitHub/README, sem parecer uma documentação gerada automaticamente. Mantive as informações técnicas, mas deixei a escrita mais direta e pessoal.
-
 # AguiaRadar — Backend (Sprint 2)
 
 Este projeto foi desenvolvido para a Sprint 2 do desafio Aguia Branca. A ideia foi construir o backend real da plataforma AguiaRadar, deixando de trabalhar com mocks e implementando a comunicação com banco de dados, autenticação, controle de acesso e as principais funcionalidades da plataforma.
