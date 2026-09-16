@@ -4,7 +4,7 @@ import br.com.fiap.aguiaradar.dto.DashboardPorEstrategia;
 import br.com.fiap.aguiaradar.dto.DashboardResumoGeral;
 import br.com.fiap.aguiaradar.model.OrientacaoEstrategica;
 import br.com.fiap.aguiaradar.model.Projeto;
-import br.com.fiap.aguiaradar.model.StatusProjeto;
+import br.com.fiap.aguiaradar.model.enums.StatusProjeto;
 import br.com.fiap.aguiaradar.repository.OrientacaoEstrategicaRepository;
 import br.com.fiap.aguiaradar.repository.ProjetoRepository;
 import lombok.RequiredArgsConstructor;
@@ -68,7 +68,7 @@ public class DashboardService {
 
                     return DashboardPorEstrategia.builder()
                             .orientacaoEstrategicaId(orientacaoId)
-                            .categoria(orientacao != null ? orientacao.getCategoria() : "N/A")
+                            .categoria(orientacao != null ? orientacao.getCategoria() : null)
                             .campanha(orientacao != null ? orientacao.getCampanha() : "N/A")
                             .totalProjetos(lista.size())
                             .investimentoTotal(somaOuZero(lista, Projeto::getInvestimento))

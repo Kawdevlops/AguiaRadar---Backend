@@ -1,7 +1,8 @@
 package br.com.fiap.aguiaradar.repository;
 
 import br.com.fiap.aguiaradar.model.Projeto;
-import br.com.fiap.aguiaradar.model.StatusProjeto;
+import br.com.fiap.aguiaradar.model.enums.StatusProjeto;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
