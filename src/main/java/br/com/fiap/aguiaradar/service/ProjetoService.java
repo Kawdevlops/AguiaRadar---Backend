@@ -3,7 +3,7 @@ package br.com.fiap.aguiaradar.service;
 import br.com.fiap.aguiaradar.dto.ProjetoRequest;
 import br.com.fiap.aguiaradar.exception.RecursoNaoEncontradoException;
 import br.com.fiap.aguiaradar.model.Projeto;
-import br.com.fiap.aguiaradar.model.StatusProjeto;
+import br.com.fiap.aguiaradar.model.enums.StatusProjeto;
 import br.com.fiap.aguiaradar.repository.ProjetoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

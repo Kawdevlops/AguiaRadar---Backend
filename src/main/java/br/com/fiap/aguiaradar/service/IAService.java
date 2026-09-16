@@ -1,7 +1,7 @@
 package br.com.fiap.aguiaradar.service;
 
 import br.com.fiap.aguiaradar.model.Ideia;
-import br.com.fiap.aguiaradar.model.StatusIdeia;
+import br.com.fiap.aguiaradar.model.enums.StatusIdeia;
 import br.com.fiap.aguiaradar.repository.IdeiaRepository;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
