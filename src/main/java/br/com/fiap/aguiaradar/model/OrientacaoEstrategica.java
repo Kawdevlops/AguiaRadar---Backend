@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import br.com.fiap.aguiaradar.model.enums.CategoriaIdeia;
+
 import java.time.LocalDateTime;
 
 /**
@@ -24,7 +26,7 @@ public class OrientacaoEstrategica {
     @Id
     private String id;
 
-    private String categoria;
+    private CategoriaIdeia categoria;
 
     private String campanha;
 
