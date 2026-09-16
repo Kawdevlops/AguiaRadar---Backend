@@ -1,4 +1,4 @@
-package br.com.fiap.aguiaradar.model;
+package br.com.fiap.aguiaradar.model.enums;
 
 /**
  * Perfis de usuario suportados pela plataforma AguiaRadar.

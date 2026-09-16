@@ -1,4 +1,4 @@
-package br.com.fiap.aguiaradar.model;
+package br.com.fiap.aguiaradar.model.enums;
 
 public enum StatusProjeto {
     PLANEJADO,

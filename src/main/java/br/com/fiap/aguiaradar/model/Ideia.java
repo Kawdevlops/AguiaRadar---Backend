@@ -1,5 +1,7 @@
 package br.com.fiap.aguiaradar.model;
 
+import br.com.fiap.aguiaradar.model.enums.CategoriaIdeia;
+import br.com.fiap.aguiaradar.model.enums.StatusIdeia;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,7 +25,7 @@ public class Ideia {
 
     private String descricao;
 
-    private String categoria;
+    private CategoriaIdeia categoria;
 
     private String colaboradorId;
 
