@@ -1,6 +1,6 @@
 package br.com.fiap.aguiaradar.dto;
 
-import br.com.fiap.aguiaradar.model.StatusIdeia;
+import br.com.fiap.aguiaradar.model.enums.StatusIdeia;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 

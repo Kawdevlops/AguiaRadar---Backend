@@ -1,11 +1,12 @@
 package br.com.fiap.aguiaradar.dto;
 
-import br.com.fiap.aguiaradar.model.StatusProjeto;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.List;
+
+import br.com.fiap.aguiaradar.model.enums.StatusProjeto;
 
 @Data
 public class ProjetoRequest {

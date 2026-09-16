@@ -1,6 +1,6 @@
 package br.com.fiap.aguiaradar.dto;
 
-import br.com.fiap.aguiaradar.model.Perfil;
+import br.com.fiap.aguiaradar.model.enums.Perfil;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
